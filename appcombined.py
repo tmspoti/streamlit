@@ -8,7 +8,7 @@ from datetime import datetime
 import pandas as pd
 from matplotlib import pyplot as plt
 
-st.title("AWWWS Kühlanlage Sensoren")
+st.title("AWS Kühlanlage Sensoren")
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
