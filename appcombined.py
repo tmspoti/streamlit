@@ -41,7 +41,7 @@ df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupf
 
 st.write(df.head(10))
 
-plt.plot(df.t, df.Temperatur)
+plt.plot(df.t[:50], df.Temperatur[:50])
 
 #start_time = st.slider(
 #     "Zeitraum auswählen",
