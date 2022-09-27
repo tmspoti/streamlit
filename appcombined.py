@@ -8,7 +8,7 @@ from datetime import datetime
 import pandas as pd
 from matplotlib import pyplot as plt
 
-st.title("AWS Kühlanlage Sensoren")
+st.title("Live-Daten SQL Server Database")
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
