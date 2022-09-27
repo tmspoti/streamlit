@@ -8,6 +8,8 @@ from datetime import datetime
 import pandas as pd
 from matplotlib import pyplot as plt
 
+st.title("AWWWS Kühlanlage Sensoren")
+
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
@@ -36,10 +38,7 @@ rows = run_query("SELECT * from dbo.datavis;")
 
 df = pd.DataFrame((tuple(t) for t in rows))
 df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't',]
-st.write(df.head(10)
 
-
-st.title("AWWWS Kühlanlage Sensoren")
 
 start_time = st.slider(
      "Zeitraum auswählen",
