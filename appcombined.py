@@ -36,6 +36,8 @@ def run_query(query):
 
 rows = run_query("SELECT * from dbo.datavis;")
 
+st.write(df.head(10))
+
 df = pd.DataFrame((tuple(t) for t in rows))
 df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't',]
 
