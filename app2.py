@@ -1,5 +1,7 @@
 import streamlit as st
 import pyodbc
+import pandas as pd
+
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
@@ -27,7 +29,7 @@ def run_query(query):
 
 rows = run_query("SELECT * from dbo.datavis;")
 
-st.write(rows)
+st.write(pd.DataFrame(rows))
 # Print results.
 #for row in rows:
  #   st.write(row)
