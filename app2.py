@@ -35,5 +35,4 @@ rows = run_query("SELECT * from dbo.datavis;")
 #st.write(pd.DataFrame(rows))
 # Print results.
 for row in rows:
-    st.write(dtype(row))
     st.write(row)
