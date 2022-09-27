@@ -40,7 +40,7 @@ df = pd.DataFrame((tuple(t) for t in rows))
 df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't',]
 
 st.write(df.head(10))
-st.write(df.dtypes)
+st.write(df.dtypes())
 plt.plot(df.t[:50], df.Temperatur[:50])
 
 #start_time = st.slider(
