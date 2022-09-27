@@ -29,11 +29,9 @@ def run_query(query):
 
 rows = run_query("SELECT * from dbo.datavis;")
 
-#df = pd.DataFrame(columns=('KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't'))
+#df = pandas.DataFrame((tuple(t) for t in rows))
+#st.write(df.head())
 
-#for i in range(1000):
-#        df.loc[i] = rows[i]
-                           
 #st.write(pd.DataFrame(rows))
 # Print results.
 for row in rows:
