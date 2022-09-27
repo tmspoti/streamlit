@@ -39,10 +39,6 @@ rows = run_query("SELECT * from dbo.datavis;")
 df = pd.DataFrame((tuple(t) for t in rows))
 df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't',]
 
-st.write(df.dtypes)
-df2 = df[:10].astype(str)
-df2.dtypes
-
 st.write(df.head(10))
 
 plt.plot(df.t[:50], df.Temperatur[:50])
