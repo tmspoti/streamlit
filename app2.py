@@ -7,15 +7,14 @@ import pyodbc
 def init_connection():
     return pyodbc.connect(
         "DRIVER={ODBC Driver 17 for SQL Server};SERVER="
-        + st.secrets["servervis.database.windows.net"]
+        + st.secrets["server"]
         + ";DATABASE="
-        + st.secrets["dbvis"]
+        + st.secrets["database"]
         + ";UID="
-        + st.secrets["adminfr"]
+        + st.secrets["username"]
         + ";PWD="
-        + st.secrets["fr22hEsT#4a"]
+        + st.secrets["password"]
     )
-
 conn = init_connection()
 
 # Perform query.
