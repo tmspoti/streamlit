@@ -1,11 +1,8 @@
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
-import datetime
 from datetime import datetime
-import datetime as dt
 import pandas as pd
-from dateutil.relativedelta import relativedelta  # to add days or years
 from matplotlib import pyplot as plt
 st.title("AWS Kühlanlage Sensoren")
 
