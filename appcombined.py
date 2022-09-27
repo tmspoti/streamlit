@@ -51,8 +51,7 @@ figlive = go.Figure(layout=go.Layout(title='Temperatur nach Zeit', yaxis = dict(
       showticklabels = True,
       gridwidth = 1 )))
 
-for country, df1 in df.items():
-    figlive = figlive.add_trace(go.Scatter(x=df1["t"], y=df1["Temperatur" ], name=country))
+figlive = figlive.add_trace(go.Scatter(x=df["t"], y=df["Temperatur" ]))
 st.plotly_chart(figlive)
 
 st.line_chart(df.Temperatur)
