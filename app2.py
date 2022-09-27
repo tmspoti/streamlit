@@ -34,7 +34,7 @@ rows = run_query("SELECT * from dbo.datavis;")
 #for i in range(1000):
 #        df.loc[i] = rows[i]
                            
-st.write(pd.DataFrame(rows))
+#st.write(pd.DataFrame(rows))
 # Print results.
 for row in rows:
     st.write(dtype(row))
