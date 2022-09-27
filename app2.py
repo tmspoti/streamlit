@@ -27,6 +27,7 @@ def run_query(query):
 
 rows = run_query("SELECT * from dbo.datavis;")
 
+st.write(rows)
 # Print results.
-for row in rows:
-    st.write(row)
+#for row in rows:
+ #   st.write(row)
