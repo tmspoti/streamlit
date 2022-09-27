@@ -29,10 +29,10 @@ def run_query(query):
 
 rows = run_query("SELECT * from dbo.datavis;")
 
-#df = pandas.DataFrame((tuple(t) for t in rows))
-#st.write(df.head())
+df = pandas.DataFrame((tuple(t) for t in rows))
+st.write(df.head(10))
 
 #st.write(pd.DataFrame(rows))
 # Print results.
-for row in rows:
-    st.write(row)
+#for row in rows:
+#    st.write(row)
