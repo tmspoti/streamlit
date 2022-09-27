@@ -41,6 +41,20 @@ df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupf
 
 st.write(df.head(10))
 
+
+
+figlive = go.Figure(layout=go.Layout(title='Temperatur nach Zeit', yaxis = dict(
+      title = 'Temperatur',
+      showgrid = True,
+      zeroline = True,
+      showline = True,
+      showticklabels = True,
+      gridwidth = 1 )))
+
+for country, df1 in df.items():
+    figlive = figlive.add_trace(go.Scatter(x=df1["t"], y=df1["Temperatur" ], name=country))
+st.plotly_chart(figlive)
+
 st.line_chart(df.Temperatur)
 plt.plot(df.t[:50], df.Temperatur[:50])
 
