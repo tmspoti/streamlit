@@ -3,3 +3,4 @@ pandas
 datetime
 plotly
 matplotlib
+pyodbc==4.0.34
