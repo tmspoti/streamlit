@@ -31,10 +31,11 @@ rows = run_query("SELECT * from dbo.datavis;")
 
 df = pd.DataFrame(columns=('KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupfer', 'RestschichtdickeKupfer', 'Temperatur', 'Luftfeuchtigkeit', 'Differenzdruck', 't'))
 
-for i in range(1000):
-        df.loc[i] = rows[i]
+#for i in range(1000):
+#        df.loc[i] = rows[i]
                            
 st.write(pd.DataFrame(rows))
 # Print results.
-#for row in rows:
- #   st.write(row)
+for row in rows:
+    st.write(dtype(row))
+    st.write(row)
