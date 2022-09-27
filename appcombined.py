@@ -41,8 +41,7 @@ df.columns =['KorosionsrateSilber', 'RestschichtdickeSilber', 'KorosionsrateKupf
 
 st.write(df.head(10))
 
-datatypes = df.dtypes 
-st.write(datatypes)
+st.line_chart(df)
 plt.plot(df.t[:50], df.Temperatur[:50])
 
 #start_time = st.slider(
