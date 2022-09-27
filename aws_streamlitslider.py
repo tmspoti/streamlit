@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 import pandas as pd
 from matplotlib import pyplot as plt
-st.title("AWS Kühlanlage Sensoren")
+st.title("AWWWS Kühlanlage Sensoren")
 
 start_time = st.slider(
      "Zeitraum auswählen",
