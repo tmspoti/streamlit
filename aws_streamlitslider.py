@@ -54,8 +54,8 @@ def plot():
 
     col1, col2 = st.columns(2)
 
-    col1.plotly_chart(figvibr)    # chart 1
-    col2.plotly_chart(figtemp)    # chart 2
+    st.plotly_chart(figvibr)    # chart 1
+    st.plotly_chart(figtemp)    # chart 2
 
 
 plot()
